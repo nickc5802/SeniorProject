@@ -1,0 +1,218 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background:
+        linear-gradient(90deg, var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        linear-gradient(var(--dot-bg) calc(var(--dot-space) - var(--dot-size)), transparent 1%) center / var(--dot-space) var(--dot-space),
+        var(--dot-color);
+    --dot-bg: white;
+    --dot-color: black;
+    --dot-size: 1px;
+    --dot-space: 22px;
+}
+
+
+.size_container {
+    max-width: 1920px;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    height: 50px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Aligned items vertically */
+    background-color: rgba(255, 255, 255, 1);
+    z-index: 1001;
+    box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.05);}
+
+.nav_container  {
+    width: 100%;
+    max-width: 1920px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Aligned items vertically */
+}
+
+nav ol { 
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ol a {
+    text-decoration: none;
+    text-align: center;
+    height:50px;
+    color: #000; 
+}
+
+nav ol a:visited{
+    color:#000;
+}
+
+nav ol a:hover{
+    color: #fff; 
+    background-color: rgba(247,105,2,1);
+}
+
+nav li {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: large;
+    margin: auto;
+    padding: 15px
+}
+
+nav h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 34px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: rgba(247,105,2,1);
+}
+
+
+.weekly_update_container {
+    margin: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid black;
+}
+
+.weekly_update_container h1 {
+    margin: auto;
+    text-align: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 48px;
+    letter-spacing: 5px;  
+}
+
+.weekly_update_container p {
+    margin: auto;
+    text-align: center;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 10px;  
+}
+
+.weekly_update_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 30px;
+
+    margin-top: 30px;
+}
+
+.four_up{
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .2);
+    padding: 30px;
+    background-color: #fff;
+    grid-row: 1/3 ;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.four_up h2 {
+    width:fit-content;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    border-bottom: 1px solid black;
+}
+
+.four_up_grid{
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid_item {
+    padding: 20px;
+}
+
+.grid_item h3 {
+    margin: auto;
+    text-align: center;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+}
+
+.grid_item li {
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+.grid_item:nth-child(1){
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-left: 0;
+    margin-left: 0
+}
+
+.grid_item:nth-child(2){
+    border-bottom: 1px solid black;
+}
+
+.grid_item:nth-child(3){
+    border-right: 1px solid black;
+}
+
+
+.jira, .time_tracking {
+    max-width: 700px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0, .2);
+    border-radius: 10px;
+}
+
+.jira img, .time_tracking img{
+    margin:auto;
+    display: block;
+    border-radius: 10px;
+
+    object-fit: contain;
+    max-width: 700px;
+    height: 100%;
+}
+
+
+.site-footer {
+    background-color: #dbdada5b;
+    padding: 6px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.footer-container {
+    width: 100vw;
+    margin: 0 auto;
+}
+
