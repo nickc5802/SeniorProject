@@ -283,7 +283,7 @@ nav a:hover {
 .timeline_heading span{
     position: relative;
     display: inline-block;
-    width: 259px;
+    width: 350px;
 }
 
 .timeline_heading span::after{
@@ -384,4 +384,28 @@ nav a:hover {
 .footer-container {
     width: 100vw;
     margin: 0 auto;
+}
+
+.demo_heading {
+    text-align: center;
+    margin: 30px 0;
+    font-family:'Bebas Neue', sans-serif;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+.demo_heading span{
+    position: relative;
+    display: inline-block;
+    width: 259px;
+}
+
+.demo_heading span::after{
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: #000; 
 }
